@@ -18,7 +18,7 @@
             <div class="card-header">Book Register(책 등록)</div>
             <div class="card-body">
                <!-- Bootstrap from-->                               <!-- 서버로 전송방법(get=QueryString , post)-->
-                       <form action="/shopping/registerPost" method="post">
+                       <form action="/shopping/registerPost.do" method="post">
                                  <div class="form-group">
                                    <label for="title">제목:</label>                                                                             <!-- 폼 파라메터 -->
                                    <input type="text" class="form-control" id="title" placeholder="Enter title" name="title">

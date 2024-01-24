@@ -1,6 +1,7 @@
 package com.example.repository;
 
 import com.example.entity.BookDTO;
+import com.example.entity.UserDTO;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -36,5 +37,20 @@ public class BookMyBatisDAO { // MyBatis API
          session.commit(); // 완료명령
          session.close(); // 반납
           return cnt;
+    }
+
+    public UserDTO userLogin(UserDTO dto) {
+        SqlSession session=sqlSessionFactory.openSession();
+        UserDTO user=session.selectOne("userLogin", dto);
+        session.close(); // 반납
+        return user;
+    }
+
+    public int bookDelete(int num) {
+        SqlSession session=sqlSessionFactory.openSession();
+        int cnt=session.delete("bookDelete",  num);
+         session.commit();
+         session.close();
+         return cnt;
     }
 }
