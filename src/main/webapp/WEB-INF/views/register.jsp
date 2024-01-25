@@ -38,7 +38,7 @@
                                  <button type="submit" class="btn btn-primary">등록</button>
                         </form>
             </div>
-            <div class="card-footer">패스트캠퍼스_BE7_박매일</div>
+            <div class="card-footer">패스트캠퍼스_BE7_신종호</div>
         </div>
     </div>
 

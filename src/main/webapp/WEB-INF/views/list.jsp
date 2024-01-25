@@ -122,7 +122,7 @@
             <div id="list" class="container" style="display:none">
                 여기에 책 리스트 출력
             </div>
-            <div class="card-footer">패스트캠퍼스_BE7_박매일</div>
+            <div class="card-footer">패스트캠퍼스_BE7_신종호</div>
         </div>
     </div>
 
